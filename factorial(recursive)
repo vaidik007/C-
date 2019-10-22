@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int factorial(int num){
+    long long int z;
+    if(num <= 1)
+    return 1;
+    else
+    return z = (num * factorial(num-1));
+cout << z ;   
+    
+}
+
+int main(){
+ int num ;
+    cout << "Enter the number :" ;
+    cin >> num ;
+    cout << factorial(num);   
+    
+}

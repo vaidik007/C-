@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int fib(int num){
+int z;    
+    if (num <= 1)
+     return num;
+    else
+    return z = (fib(num -1 ) + fib(num - 2));
+cout << z    ;
+
+}
+
+
+int main() {
+    int num ; 
+    cout << "Enter the number: " ;
+    cin  >> num  ;
+    cout << fib(num) ; 
+	return 0;
+}
+

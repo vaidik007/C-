@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int search(int a[],int x,int n){
+    for(int i=0 ; i<n ; i++){
+        if(a[i] == x){
+        return i ;
+        }
+    }
+}
+
+
+int main() {
+	int a[] = {5,6,7,8,2,9,5} ;
+	int x = 2 ;
+	int n = sizeof(a)/sizeof(*a) ;
+	cout << search(a,x,n) ;
+	return 0;
+}

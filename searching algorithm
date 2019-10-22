@@ -1,3 +1,5 @@
+//linear search//
+
 #include <iostream>
 using namespace std;
 
@@ -17,3 +19,7 @@ int main() {
 	cout << search(a,x,n) ;
 	return 0;
 }
+
+
+//binary search // 
+

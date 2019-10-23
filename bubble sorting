@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int printarray(int array[], int z){
+    for(int i = 0 ; i< z ; i++){
+        cout << array[i] << " " ;
+    }
+}
+
+int swap(int *fa, int *sa){
+    int z = *sa ;
+    *sa = *fa ;
+    *fa = z;
+    return 0 ;
+}
+
+int bubblesort(int array[], int z){
+        
+ for(int j=0 ; j < z ; j++){        
+    for(int i = 0 ; i < z-j-1 ; i++){
+        if(array[i]>array[i+1])
+           swap(&array[i],&array[i+1]) ;
+    
+       
+    }
+    
+ }
+  printarray(array,z)    ;
+ return 0 ;
+}
+
+
+int main() {
+    int arr[] = {5,22,67,12,41,23,7} ;
+    int z = sizeof(arr)/sizeof(*arr) ;
+    cout << bubblesort(arr,z);
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+

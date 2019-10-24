@@ -16,7 +16,7 @@ int swap(int *fa, int *sa){
 
 int bubblesort(int array[], int z){
         
- for(int j=0 ; j < z ; j++){        
+ for(int j=0 ; j < z-1 ; j++){        
     for(int i = 0 ; i < z-j-1 ; i++){
         if(array[i]>array[i+1])
            swap(&array[i],&array[i+1]) ;

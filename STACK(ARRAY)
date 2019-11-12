@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std ;
+#define MAX_SIZE 5 
+int top = -1 ;
+int A[MAX_SIZE];
+
+void push(int N){
+        top = top + 1 ;
+        A[top]= N ;
+}
+
+void pop(){
+    top = top -1 ;
+}
+
+int Top(){
+    return A[top];
+}
+
+int main(){
+    
+    push(5);
+    push(8);
+    push(9);
+    push(10);
+    push(21);
+    for(int i=0 ;i<=top ; i++)
+      cout << A[i] << "\n" ;
+    pop();
+    pop();
+    for(int i=0 ;i<=top ; i++)
+      cout << A[i] << "\n";
+    
+}
